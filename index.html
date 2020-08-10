@@ -173,10 +173,10 @@
 			text-decoration: none;
 		}
 
-		.resume_link {
+		/* .resume_link {
 			text-decoration: none;
 			color: white;
-		}
+		} */
 
 		.prof_img {
 			object-fit: contain;
@@ -291,10 +291,10 @@
 					<div class="row">
 						<div class="col p-1">
 		
-							<a class="resume_link"
-								href="https://drive.google.com/file/d/1geUmbEHo5KsiCDlkfkKGRSUiyaQsF8VL/view?usp=sharing"><button
-									type="button" class="btn btn-primary">My Resume</button></a>
-		
+							<a class="btn btn-secondary bg-success btn-lg px-2 mx-5 text-white"
+								href="https://drive.google.com/file/d/1geUmbEHo5KsiCDlkfkKGRSUiyaQsF8VL/view?usp=sharing" target="_blank">
+								My Resume
+							</a>
 						</div>
 					</div>
 				</div>
@@ -564,19 +564,29 @@
 
 		</div>
         <!-- git -->
-		<div class="bg-light disp_sm py-5 my-5">
+		<div class="text-center mt-5 container">
 
-			<div class="row">
-				<div class="col text-center">
-					<img src="https://ghchart.rshah.org/abhi-1408" class="cal-img git_img" alt="Github chart">
-				</div>
-			</div>
-		</div>
-		<div class="py-5 "></div>
+            <div class="col-12 mb-4 h-100">
+                <div class="card p-3 my-card h-100">
+                    <a href="https://github.com/vinaykanth-edu" class="btn btn-primary " target="_blank">Git Hub
+                        Contributions
+                    </a>
+                    <div class="calendar mt-3 w-100" ></div>
+                </div>
+                <div class=" mt-4"></div>
+            </div>
+
+        </div>
     
     </div>
 
+	<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+    <script type="text/javascript">
 
+        GitHubCalendar('.calendar', 'vinaykanth-edu', {responsive:true})
+
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
