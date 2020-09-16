@@ -8,7 +8,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel = "stylesheet" type ="text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <style>
-         .grid-box1 {
+         /* .grid-box1 {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: 1fr 1fr;
@@ -19,17 +19,13 @@
             grid-template-columns: repeat(3, 2fr);
             grid-template-rows: 1fr;
 
-        }
-        /* <style type="text/css"> */
-		/* div {
-			border: 1px solid black;
-		} */
-
+        } */
+       
 		#pic_border {
-			border: 5px solid #88B9D7;
-			width: 200px;
-			height: 200px;
-			object-fit: contain;
+			border: 8px solid #88B9D7;
+			width: 180px;
+			height: 180px;
+			object-fit: cover;
 			background-color: white;
 		}
 
@@ -65,15 +61,6 @@
 			font-weight: 300;
 			font-family: Roboto;
 		}
-
-		/* #bg_info {
-			background-image: linear-gradient(to bottom, #06BEB6, #48B1BF);
-
-		} */
-
-		/* #proj_bg {
-			background-image: linear-gradient(#98F5FD, #CBFDFE, #98F5FD);
-		} */
 
 		.proj_name {
 			color: #3C5E9B;
@@ -111,47 +98,10 @@
 			font-family: Open Sans;
 		}
 
-		/* .time_title {
-			color: #5D86B4;
-			font-size: 32px;
-			font-weight: 700;
-			font-family: Open Sans;
-		}
-
-		.time_text {
-			color: #5D86B4;
-			font-size: 24px;
-			font-weight: 400;
-			font-family: Open Sans;
-		} */
-
-
-/* 
-		.det {
-			font-weight: bold;
-		} */
 
 		#prof {
 			display: block;
 		}
-
-		/* .ww {
-			width: 20%
-		} */
-
-		/* .bg_hour {
-			background-image: radial-gradient(#D8FEF8 20%, #6FEFFA);
-			font-size: 20px;
-			font-weight: bold;
-		} */
-
-		/* .pic {
-			background-image: linear-gradient(rgba(6, 190, 182, 1), rgba(28, 181, 224, 0));
-		} */
-
-		/* .main {
-			border: 5px solid red;
-		} */
 
 		.circle {
 			position: absolute;
@@ -172,11 +122,6 @@
 		.links {
 			text-decoration: none;
 		}
-
-		/* .resume_link {
-			text-decoration: none;
-			color: white;
-		} */
 
 		.prof_img {
 			object-fit: contain;
@@ -221,9 +166,6 @@
 		}
 
 		@media screen and (max-width: 600px) {
-			/* body {
-				background-color: olive;
-			} */
 
 			.disp_md {
 				display: none
@@ -241,7 +183,10 @@
 </head>
 <body>
     <div class="container-fluid">
-        <!-- pic -->
+		<!-- pic -->
+		
+		
+
 		<div class="p-1 pt-4 pic text-center">
 			<div class="row">
 				<div class="col">
@@ -290,17 +235,17 @@
 					</div>
 					
 					<div class="container px-5 text-center pt-3">
-						<h5 class="text-center text-muted mb-4 kodchasan-font color-light-grey">
+						<h6 class="text-center mb-4 kodchasan-font color-light-grey">
 
 							A passionate Software Developer trained in Front-End Development, Data Structures and Algorithms at Masai School's Intensive Bootcamp. Looking forward to an opportunity, where I shall be able to contribute towards self and organisation's growth.
-						</h5>
+						</h6>
 					</div>
 					
 
 					<div class="row">
 						<div class="col p-1">
 		
-							<a class="btn btn-secondary bg-success btn-lg px-2 mx-5 text-white"
+							<a class="btn btn-secondary bg-success btn-lg px-2 mx-4 text-white"
 								href="https://drive.google.com/file/d/1geUmbEHo5KsiCDlkfkKGRSUiyaQsF8VL/view?usp=sharing" target="_blank">
 								My Resume
 							</a>
@@ -310,8 +255,38 @@
 
 		<br>
            
-        <hr>    
-        <div class="container">
+		<hr>    
+		<div class="container text-center mb-2 mt-2">
+            <h2 class="text-center text-muted mb-5"><strong>Tech Stack</strong></h2>
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3"><img class="shadow-sm" src="resources/html5.svg" style="height: 80px;">
+                    <p class="mt-2 ">HTML5</p>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3"><img class="shadow-sm" src="resources/css3.svg" style="height: 80px;">
+                    <p class="mt-2 ">CSS3</p>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3"><img class="shadow-sm" src="resources/bootstrap.svg" style="height: 80px;">
+                    <p class="mt-2 ">BOOTSTRAP</p>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3"><img class="shadow-sm" src="resources/git.svg" style="height: 80px;">
+                    <p class="mt-2 ">GIT</p>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3"><img class="shadow-sm" src="resources/javascript.svg" style="height: 80px;">
+                    <p class="mt-2 ">JS</p>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3"><img class="shadow-sm" src="resources/react.svg" style="height: 80px;">
+                    <p class="mt-2 ">REACT</p>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3"><img class="shadow-sm" src="resources/redux.svg" style="height: 80px;">
+                    <p class="mt-2 ">REDUX</p>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3"><img class="shadow-sm" src="resources/jquery.png" style="height: 80px;">
+                    <p class="mt-2 ">JQUERY</p>
+                </div>
+            </div>
+		</div>
+		
+        <!-- <div class="container">
             <h1 class="text-center text-muted font-weight-bold my-4">Tech Stack</h1>
             <div class="grid-box1">
                 <div class="text-center">
@@ -347,29 +322,37 @@
                     <p>FIREBASE</p>
                 </div>
             </div>
-        </div>
-        <hr>
-        <div class="container">
-            <h1 class="text-center text-muted font-weight-bold my-2">Proficiencies</h1>
-            <div class="grid-box2">
-                <div class="text-center">
-                    <img class=" shadow-sm" src="resources/react.svg" style="height: 80px;">
-                    <h4 class="text-muted"><strong>React App</strong></h4>
-                    <p class="text-center">React app and ReactJs</p>
+        </div> -->
+		<hr>
+		<div class="mb-5 mt-5">
+			<h2 class="text-center text-muted"><strong>Proficiencies</strong></h2>
+		</div>
 
-                </div>
-                <div class="text-center">
-                    <img class=" shadow-sm" src="resources/frontend.png" style="height: 80px;">
-                    <h4 class="text-muted"><strong>Frontend</strong></h4>
-                    <p class="text-center">HTML,JS,CSS Bootstrap</p>
-                </div>
-                <div class="text-center">
-                    <img class=" shadow-sm" src="resources/data.png" style="height: 80px;">
-                    <h4 class="text-muted"><strong>Algo & Data Structures</strong></h4>
-                    <p class="text-center">Arrays,Stacks and Queues,Recursion & Search</p>
-                </div>
-            </div>
-        </div>
+		<div class="mt-5">
+			<div class="container text-center">
+				<div class="row">
+					<div class="col-md-4"><img class="mb-2" src="resources/react.svg" style="height: 80px;">
+						<h4 class="text-muted"><strong>React App</strong></h4>
+						<p class="text-center">React app and ReactJs</p>
+						<!-- <h4 class="text-muted " style="margin-top:35px;"><strong>React App</strong></h4> -->
+					</div>
+					<div class="col-md-4"><img class="mb-2" src="resources/frontend.png" style="height: 80px;">
+						<!-- <h4 class="text-muted mb-3 mt-1"><strong>Frontend</strong><br></h4> -->
+						<h4 class="text-muted"><strong>Frontend</strong></h4>
+						<p class="text-center">HTML,JS,CSS Bootstrap</p>
+					</div>
+					<div class="col-md-4"><img class="mb-2"  src="resources/data.png" style="height: 80px;">
+						<!-- <h4 class="text-muted mt-3 mb-3 "><strong>Algo & Data Structures</strong><br></h4> -->
+						<h4 class="text-muted"><strong>Algo & Data Structures</strong></h4>
+						<p class="text-center">Arrays, Stacks, Queues, Sorting & Search</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+     
         <hr>
     </div>
     <!-- project -->
